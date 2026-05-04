@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de let document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+
+
+    input {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 5px 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #resultado {
+        margin-top: 20px;
+        font-size: 1.2em;
+        color: #333;
+    }
+</style>
+
+
+
+<body>
+    <h1>Exemplo de let document</h1>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <label for="">digite um numero para multiplicar por 2:</label>
+    <input type="number" id="multiplicar">
+    <button onclick="multiplicarPorDois()">clique aqui para multiplica</button>
+    <p id="resultado"></p>
+    <script>
+        function multiplicarPorDois() {
+            let numero = document.getElementById("multiplicar").value;
+            let resultado = numero * 2;
+            document.getElementById("resultado").innerHTML = "O resultado é: " + resultado;
+        }   
+    </script>
+</body>
+
+</html>
